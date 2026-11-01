@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 36px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f9f5fa;
+    color: #29243a;
+}
+
+main {
+    max-width: 880px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 10px 10px 28px;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #845e89;
+}
+
+h1 {
+    font-size: clamp(32px, 5vw, 45px);
+    margin: 10px 0;
+    color: #372843;
+}
+
+h1 span {
+    color: #b98bb0;
+}
+
+.subtitle {
+    max-width: 560px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #665a71;
+}
+
+.upload-panel,
+.processing,
+.results {
+    background: white;
+    border: 1px solid #eadce8;
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 22px rgba(76, 45, 78, 0.04);
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 17px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+input[type="file"] {
+    flex: 1;
+    min-width: 220px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #dcc8da;
+    background: #fcf9fc;
+}
+
+button {
+    border: 0;
+    border-radius: 11px;
+    background: #89658e;
+    color: white;
+    padding: 14px 22px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #704c76;
+}
+
+.notice {
+    margin: 18px 0 0;
+    background: #f5eff6;
+    padding: 12px 15px;
+    border-radius: 9px;
+    color: #5b4562;
+    line-height: 1.5;
+}
+
+.notice.error {
+    background: #fff0f0;
+    color: #9a3434;
+}
+
+.processing p {
+    color: #675a70;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.question {
+    display: flex;
+    gap: 15px;
+    padding: 19px 0;
+    border-top: 1px solid #f0e7ee;
+}
+
+.question:first-of-type {
+    border-top: 0;
+}
+
+.q-number {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: #f1e5ef;
+    color: #7c557f;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+}
+
+.question h3 {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 3px 0 8px;
+}
+
+.answer {
+    font-size: 17px;
+    font-weight: 700;
+    color: #826088;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    color: #8b7e90;
+    font-size: 12px;
+    padding: 15px 0 30px;
+}
+
+@media (max-width: 600px) {
+    .upload-panel,
+    .processing,
+    .results {
+        padding: 18px;
+    }
+
+    form {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    input[type="file"],
+    button {
+        width: 100%;
+    }
+}
